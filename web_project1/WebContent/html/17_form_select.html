@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form-select</title>
+<style>
+	input {
+		width:50px
+	}
+</style>
+</head>
+<body>
+	<h1>Form - select</h1>
+	<h3>연락처를 선택해주세요</h3>
+	<form action="#">
+		<select name="tel">
+			<option value="skt">SKT</option>
+			<option value="kt">KT</option>
+			<option value="lg">LG U+</option>
+		</select>
+		<input type="tel" name="phone1"> -
+		<input type="tel" name="phone2"> -
+		<input type="tel" name="phone3">
+		<br>
+		<button type="submit">서버전송</button>
+	</form>
+</body>
+</html>
