@@ -1,0 +1,5 @@
+/* selector(º±≈√¿⁄) {property:value;....}*/
+h1 {background-color:lightblue}
+.h {background-color:lightpink; color:seagreen}
+#h2 {background-color:plum; color:salmon}
+::selection {background-color:white; color:lightgray}								
