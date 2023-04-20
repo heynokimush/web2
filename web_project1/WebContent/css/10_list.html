@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	* {
+		font-family:나눔고딕;
+		padding:0px; margin:0px;
+	}
+	ul.u1{
+		list-style-type:circle;
+		padding:30px;
+		background:mediumseagreen;
+	}
+	ul.u1 li {
+		background:lightgreen;
+		padding:5px;
+		margin:5px
+	}
+	
+	ul.u2 {
+		/* border:1px solid seagreen; */
+		list-style-type:none;
+		padding:0px;
+		text-align: center;
+		justify-content: center;
+		display:flex;
+	}
+	ul.u2 li {
+		/* border:1px solid dodgerblue; */
+		/* display:inline-block; */
+		float:left;
+	}
+	ul.u2 li:nth-child(1) {
+		border-left:3px solid cornflowerblue;
+		/* margin-left:20px; */
+	}
+	ul.u2 a {
+		text-decoration:none;
+		color:cornflowerblue;
+		display:inline-block;
+		width:100px;
+		padding:5px;
+		/* border:1px solid gray */
+	}
+	ul.u2 a:hover {
+		color:white;
+		background:cornflowerblue;
+	}
+	
+	h2 {
+		text-align:center;
+		font-family:"Bauhaus 93";
+		color:cornflowerblue;
+		margin:50px 0 20px 0;
+	}
+	
+</style>
+</head>
+<body>
+	<!-- <h1>List - UL, OL</h1>
+	<ul class="u1">
+		<li>JAVA</li>
+		<li>Oracle</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul> -->
+	
+	<h2>Navigation Menu</h2>
+	<ul class="u2">
+		<li><a href="#">로그인</a></li>
+		<li><a href="#">회원가입</a></li>
+		<li><a href="#">마이페이지</a></li>
+		<li><a href="#">공지사항</a></li>
+		<li><a href="#">게시판</a></li>
+		<li><a href="#">관리자</a></li>
+	</ul>
+</body>
+</html>
