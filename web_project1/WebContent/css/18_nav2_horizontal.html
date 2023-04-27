@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	ul {
+		list-style-type:none;
+		background:#333;
+		/* height:50px; */
+		overflow:hidden;
+		margin:0; padding:0;
+	}
+	ul > li {
+		float:left;
+	}
+	ul > li:last-child {
+		float:right;
+	}
+	
+	ul > li > a {
+		color:white;
+		text-decoration:none;
+		padding:14.8px 20px;
+		display:block;
+	}
+	ul > li:first-child > a {
+		background:#04AA6D;
+	}
+	
+	ul > li:nth-child(n+2) > a:hover {
+		background:#000;
+	}
+	
+	div.content {
+		height:500px;
+		background:beige;
+	}
+</style>
+</head>
+<body>
+	<h1>Horizontal</h1>
+	<nav>
+		<ul>	<!-- left menu -->
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+	
+	<div class="content">	<!-- content -->
+		<p>Horizontal menu - Home</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/* * {margin:0; padding:0;} */
+	div {
+		display:inline-block;
+		width:250px; height:300px;
+		border:1px solid lightgray;
+		text-align:center;
+	}
+	img {
+		width:230px; height:150px;
+		margin:10px;
+	}
+	p {
+		display:inline-block;
+		margin:20px 0 10px 0;
+	}
+	.p1,.p2 {
+		background:#F6F6F6;
+		color:#FB1E64;
+		padding:0 5px;
+	}
+	button {
+		background:mediumseagreen;
+		color:white;
+		font-weight:bold;
+		font-size:15px;
+		border-radius:5px;
+		width:230px;
+		margin:10px; padding:10px 0;
+		border:none;
+	}
+	button:hover {
+		background:seagreen;
+		cursor:pointer;
+	}
+</style>
+</head>
+<body>
+	<h1>Display</h1>
+	<div id="d1">
+		<p class="p1">display:none</p>
+		<img src="https://www.w3schools.com/css/img_5terre.jpg">
+		<button type="button" onclick="btn_click('remove')">Remove</button>
+	</div>
+	<div id="d2">
+		<p class="p2">visibility:hidden</p>
+		<img src="https://www.w3schools.com/css/img_forest.jpg">
+		<button type="button" onclick="btn_click('hide')">Hide</button>
+	</div>
+	<div id="d3">
+		<p>Reset</p>
+		<img src="https://www.w3schools.com/css/img_lights.jpg">
+		<button type="button" onclick="btn_click('reset')">Reset All</button>
+	</div>
+	
+	<script>
+		function btn_click(btnName){
+			if(btnName == 'remove'){
+				document.getElementById("d1").style.display = "none";
+			} else if(btnName == 'hide') {
+				document.getElementById("d2").style.visibility = "hidden";
+			} else if(btnName == 'reset') {
+				document.getElementById("d1").style.display = "inline-block";
+				document.getElementById("d2").style.visibility = "visible";
+			}
+		}
+	</script>
+</body>
+</html>
