@@ -30,12 +30,18 @@
 		let list = employee.dept1;
 		let code = "<table><tr><th>번호</th><th>성명</th><th>주소</th><th>나이</th></tr>";
 		
-		for(i=0; i<list.length; i++) {
-			code += "<tr><td>"+(i+1)+"</td>";
+		for(i in list){
+			code += "<tr><td>"+(parseInt(i)+1)+"</td>";
 			code += "<td>"+list[i].name+"</td>";
 			code += "<td>"+list[i].addr+"</td>";
 			code += "<td>"+list[i].age+"</td></tr>";
 		}
+		/* for(i=0; i<list.length; i++) {
+			code += "<tr><td>"+(i+1)+"</td>";
+			code += "<td>"+list[i].name+"</td>";
+			code += "<td>"+list[i].addr+"</td>";
+			code += "<td>"+list[i].age+"</td></tr>";
+		} */
 		
 		code += "</table>";
 		$("body").append(code);
